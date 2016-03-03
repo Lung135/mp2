@@ -1,1 +1,9 @@
 // Insert your mixins
+@mixin transition-color($time) {
+	-o-transition:		$time;
+  	-ms-transition:		$time;
+  	-moz-transition:	$time;
+  	-webkit-transition:	$time;
+
+  	transition:			$time;
+} 

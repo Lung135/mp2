@@ -1,7 +1,136 @@
 // Add any custom Sass & CSS here
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import "variables";
 
 body{
+
+	background-color: black;
 	@include breakpoint(medium down){
-		background: red !important;
+		background: red important;
 	}
+
+	#myName {
+		font-family: 'Raleway', sans-serif;
+	}
+
+	.title {
+		padding-top: 10px;
+		h1 {
+			font-size: 4em;
+			font-family: 'Raleway', sans-serif;
+		}
+		h2 {
+			font-size: 3em;
+			font-family: 'Raleway', sans-serif;
+		}
+		h3 {
+			font-size: 2em;
+			font-family: 'Raleway', sans-serif;
+		}
+	}
+
+	#hello {
+		background-image: url("../media/imgs/seattle2.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		/*overflow: hidden;*/
+		height: 500px;
+		color: $darkgray;
+
+	}
+
+	#about {
+		color: white;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.job-logo{
+		max-height: 200px;
+	}
+
+	#work{
+		background-color: $lightergray;
+		text-align: center;
+	}
+
+	.full-width {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: initial;
+	}
+
+	#photos {
+		color: $lightergray;
+		text-align: center;
+		.video-container {
+			video {
+				height: 282px;
+				width: 414px;
+				overflow: hidden;
+				display: block;
+			}
+		}
+		.carousel {
+			padding-bottom: 10px;
+		}
+		.slide {
+			padding: 10px;
+		}
+		carousel-button {
+			padding-top: 125px;
+			height: 100%;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		a {
+			text-align: center;
+			text-decoration: none;
+			font-size: 30px;
+			color: $gray;
+			@include transition-color(.5s);
+		}
+		a:hover {
+			color: white;
+		}
+		.slide-container {
+
+		}
+		.play-button {
+			color: $gray;
+			font-size: 175px;
+			text-align: center;
+			@include transition-color(.5s);
+		}
+		.play-button:hover {
+			color: white;
+		}	
+	}
+
+	footer {
+		text-align: center;
+		background-color: $lightergray;
+		i {
+			font-size: 150px;
+			padding: 0;
+			@include transition-color(.5s);
+		}
+		i:hover {
+			color: $darkgray;
+		}
+		h4 {
+			padding: 0;
+		}
+		a {
+			color: black !important;
+		}
+
+	}
+
+
+
+	font-family: "Raleway", sans-serif !important;
 }
